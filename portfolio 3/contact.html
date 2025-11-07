@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">Riwa Salsabila</div>
+    <nav>
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="about.html" class="nav-item">About Me</a>
+      <a href="skills.html" class="nav-item">Skills</a>
+      <a href="certificate.html" class="nav-item">Certificates</a>
+      <a href="contact.html" class="nav-item active">Contact</a>
+    </nav>
+    <footer class="side-footer">© 2025 Riwa</footer>
+  </aside>
+
+  <main class="content">
+    <article class="paper">
+      <h2>Contact</h2>
+      <p>Use the form below or email me at <strong>riwasalsa@gmail.com</strong></p>
+      <form id="contactForm" onsubmit="handleForm(event)">
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send</button>
+        </div>
+      </form>
+      <div id="formStatus" class="muted"></div>
+    </article>
+  </main>
+</body>
+</html>
